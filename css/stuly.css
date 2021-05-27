@@ -1,0 +1,106 @@
+:root {
+    --main-color: #10cab7;
+    --second-color: #2c4755;
+    --therd-color:#f6f6f6
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Lexend Deca', sans-serif;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+@media (max-width: 600px) {
+    body{
+        height: 200vh;
+    }
+    .container{
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+.box{
+    width: 20%;
+    height: 60%;
+    color: white;
+    
+}
+
+@media (max-width: 600px) {
+    .box{
+        width: 90%;
+        height: 100%;
+    }
+}
+
+.container .box:first-child{
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 5px 0 0 5px;
+}
+
+.container .box:nth-child(2){
+    background-color: hsl(184, 100%, 22%)
+}
+
+.container .box:nth-child(2) a{
+    color: hsl(184, 100%, 22%)
+}
+
+.container .box:last-child{
+    background-color:hsl(179, 100%, 13%);
+    border-radius:0 5px 5px 0;
+}
+
+.container .box:last-child a{
+    color:hsl(179, 100%, 13%);   
+}
+
+.box img,h2,p,a{
+    margin-top: 15%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.box h2 {
+    margin-top: 5%;
+}
+
+.box p {
+    font-size: 15px;
+    line-height: 1.8;
+    margin-top: 5%;
+    margin-bottom: 20%;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+@media (max-width: 375px) {
+    .box p{
+        margin-bottom: 40%;
+    }
+    body{
+        height: 200vh;
+    }
+}
+
+.box a {
+    text-decoration: none;
+    color: hsl(31, 77%, 52%);
+    background-color: #fff;
+    border-radius: 25px;
+    padding: 10px 20px;
+    
+}
